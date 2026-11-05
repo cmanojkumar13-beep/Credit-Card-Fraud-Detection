@@ -4,13 +4,13 @@
 
 Credit Card Fraud Detection is a Machine Learning project that identifies fraudulent credit card transactions and distinguishes them from genuine transactions.
 
-The main objective is to develop a predictive model that detects suspicious transactions using various Machine Learning algorithms.
+The objective is to build and compare multiple Machine Learning models to identify suspicious transactions and select the best-performing model.
 
 ## 🎯 2. Problem Statement
 
 Credit card fraud is a major financial problem. Detecting fraudulent transactions accurately helps reduce financial losses and improve transaction security.
 
-This project uses Machine Learning techniques to classify transactions into:
+This project classifies transactions into:
 
 - **0 – Genuine Transaction**
 - **1 – Fraudulent Transaction**
@@ -24,22 +24,25 @@ This project uses Machine Learning techniques to classify transactions into:
 - **Model Saving:** Joblib
 - **Web Application:** Streamlit
 - **Development Environment:** VS Code, Jupyter Notebook
+- **Version Control:** Git, GitHub
 
 ## 📂 4. Dataset Information
 
-- Dataset: Credit Card Fraud Detection
-- Source: Kaggle
-- File: `creditcard.csv`
-- Target Variable: `Class`
+- **Dataset:** Credit Card Fraud Detection
+- **Source:** Kaggle
+- **File:** `creditcard.csv`
+- **Target Variable:** `Class`
 
-The dataset contains transaction details, including:
+Dataset features include:
 
 - Time
 - V1 to V28
 - Amount
 - Class
 
-The dataset is highly imbalanced, with fraudulent transactions representing a small percentage of the total transactions.
+The dataset is highly imbalanced, with fraudulent transactions representing a small percentage of total transactions.
+
+**Note:** The dataset CSV files are maintained separately from the GitHub repository if they exceed GitHub's standard file size limit. Download the original dataset from Kaggle to reproduce the project.
 
 ## 🔄 5. Project Workflow
 
@@ -51,7 +54,7 @@ Collected the Credit Card Fraud Detection dataset from Kaggle.
 - Checked missing values.
 - Checked duplicate records.
 - Handled missing values where required.
-- Checked and handled outliers.
+- Analyzed and handled outliers.
 
 ### Step 3: Exploratory Data Analysis (EDA)
 - Analyzed numerical features.
@@ -95,7 +98,7 @@ Evaluated the selected model using:
 - Precision-Recall AUC
 
 ### Step 10: Feature Importance
-Analyzed the importance of input features to understand their contribution to fraud prediction.
+Analyzed feature importance to understand the contribution of input variables to fraud prediction.
 
 ### Step 11: Prediction System
 Saved the best-performing model using Joblib and implemented a prediction system.
@@ -126,9 +129,8 @@ Developed a Streamlit application to predict whether a credit card transaction i
 
 ## 📁 8. Project Structure
 
-Credit Card Fraud Detection/
-│
-├── .venv/
+```text
+Credit-Card-Fraud-Detection/
 │
 ├── app/
 │   └── app.py
@@ -147,13 +149,7 @@ Credit Card Fraud Detection/
 │   └── best_fraud_model.pkl
 │
 ├── reports/
-│   ├── amount_by_class.png
-│   ├── amount_distribution.png
-│   ├── correlation.png
-│   ├── correlation_heatmap.png
-│   ├── fraud_distribution.png
-│   ├── handling_nullvalues.png
-│   └── handling_outliers.png
+│   └── model_comparison_results.csv
 │
 ├── src/
 │   ├── data_preprocessing.py
@@ -168,11 +164,20 @@ Credit Card Fraud Detection/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
+
+## ⚙️ 9. Installation and Setup
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/cmanojkumar13-beep/Credit-Card-Fraud-Detection.git
+```
 
 ### Navigate to Project Folder
 
 ```bash
-cd "Credit Card Fraud Detection"
+cd Credit-Card-Fraud-Detection
 ```
 
 ### Create Virtual Environment
@@ -193,6 +198,8 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+**Dataset Setup:** Download `creditcard.csv` from Kaggle and place it inside `data/raw/`. Generate the processed CSV files by running the preprocessing and feature engineering scripts in the appropriate order.
+
 ## ▶️ 10. Run the Application
 
 Run the Streamlit application:
@@ -203,13 +210,18 @@ streamlit run app/app.py
 
 ## 📈 11. Model Results
 
-Add your actual model results after checking `reports/model_comparison_results.csv`.
+Model performance is compared using Precision, Recall, F1-Score, ROC-AUC, and PR-AUC.
 
-- **Best Model:** Add selected model name.
-- **Precision:** Add actual score.
-- **Recall:** Add actual score.
-- **F1-Score:** Add actual score.
-- **ROC-AUC:** Add actual score.
+| Evaluation Metric | Result |
+|---|---|
+| Best Model | To be updated |
+| Precision | To be updated |
+| Recall | To be updated |
+| F1-Score | To be updated |
+| ROC-AUC | To be updated |
+| PR-AUC | To be updated |
+
+*Replace the placeholders with actual model evaluation results.*
 
 ## 🚀 12. Future Enhancements
 
@@ -232,6 +244,5 @@ It covers the complete Machine Learning workflow, including data preprocessing, 
 
 Aspiring AI/ML Engineer | Python | SQL | Machine Learning | Data Science
 
-GitHub: https://github.com/cmanojkumar13-beep
-
-LinkedIn: https://www.linkedin.com/in/manoj-kumar-c1234/
+- **GitHub:** https://github.com/cmanojkumar13-beep
+- **LinkedIn:** https://www.linkedin.com/in/manoj-kumar-c1234/
